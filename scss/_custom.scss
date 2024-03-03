@@ -36,10 +36,5 @@ $theme-dark-100: $gray-200; // Light bg - replaces primary-100
 // GLOBAL FONT FAMILY
 $font-family-sans-serif: 'Montserrat', sans-serif;
 
-// CUSTOM COMPONENT STYLES
-.hero-heading {
-    padding-top: 40px; // Adjust the value as needed
-}
-
 // IMPORT BOOTSTRAP v5.2
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
