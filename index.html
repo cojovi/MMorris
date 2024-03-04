@@ -629,30 +629,29 @@
         </div>
       </div>        
       <div class="tab-pane fade" id="signup-tab-pane" role="tabpanel" aria-labelledby="signup-tab" tabindex="0">
-          <form action="https://script.google.com/macros/s/AKfycbz2eYufTIqSD5BcOE7k_UoiqHyaSOXw2BKFUGte8a2c7OOuwnvFAikwiggaL8ePycFi/exec" method="post">
-            <div class="row g-2">
-              <div class="col-md mb-2">
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="floatingInputFirstname" placeholder="Sammy" value="">
-                  <label for="floatingInputFirstname">First name</label>
-                </div>
+        <form action="https://script.google.com/macros/s/AKfycbz2eYufTIqSD5BcOE7k_UoiqHyaSOXw2BKFUGte8a2c7OOuwnvFAikwiggaL8ePycFi/exec" method="post">
+          <div class="row g-2">
+            <div class="col-md mb-2">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputFirstname" name="firstName" placeholder="Sammy">
+                <label for="floatingInputFirstname">First name</label>
               </div>
-              <div class="col-md mb-2">
-                <div class="form-floating">
-                  <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com"
-                    value="">
-                  <label for="floatingInputEmail">Email address</label>
-                </div>
+            </div>
+            <div class="col-md mb-2">
+              <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInputEmail" name="email" placeholder="name@example.com">
+                <label for="floatingInputEmail">Email address</label>
               </div>
-              <div class="col-md-12 mb-2">
-                <div class="form-floating">
-                  <input type="password" class="form-control" id="floatingPassword2" placeholder="Password">
-                  <label for="floatingPassword2">Password</label>
-                </div>
+            </div>
+            <div class="col-md-12 mb-2">
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword2" name="password" placeholder="Password">
+                <label for="floatingPassword2">Password</label>
               </div>
-              <div class="col-md-12">
-                <div class="form-floating d-grid">
-                  <input class="btn-flat btn-sm" type="button" value="Sign up">
+            </div>
+            <div class="col-md-12">
+              <div class="form-floating d-grid">
+                <input class="btn-flat btn-sm" type="submit" value="Sign up">
                 </div>
               </div>
             </div>
@@ -665,7 +664,7 @@
   <!-- START THE MODAL SECTION FOR GET YOUR ESTIMATE -->
 
   <div class="mb-modal mb-hidden get-estimate" id="get-estimate-id">
-    <button class="btn--close-modal" id="get-estimate">&times;</button>
+    <button class="btn--close-modal" id="get-estimate-close">&times;</button>
     <h2 class="mb-modal__header text-center">
       Request a FREE estimate today!
     </h2>
@@ -674,25 +673,25 @@
         <div class="row g-2">
           <div class="col-md mb-2">
             <div class="form-floating">
-              <input type="text" class="form-control" id="floatingInputFirstname3" placeholder="Sammy" value="">
-              <label for="floatingInputFirstname3">First name</label>
+              <input type="text" class="form-control" id="floatingInputFirstname" name="firstName" placeholder="First Name" value="">
+              <label for="floatingInputFirstname">First name</label>
             </div>
           </div>
           <div class="col-md mb-2">
             <div class="form-floating">
-              <input type="email" class="form-control" id="floatingInputEmail3" placeholder="name@example.com" value="">
-              <label for="floatingInputEmail3">Email address</label>
+              <input type="email" class="form-control" id="floatingInputEmail" name="email" placeholder="Email Address" value="">
+              <label for="floatingInputEmail">Email address</label>
             </div>
           </div>
           <div class="col-md-12 mb-2">
             <div class="form-floating">
-              <input type="password" class="form-control" id="floatingPassword3" placeholder="Password">
-              <label for="floatingPassword3">Password</label>
+              <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
+              <label for="floatingPassword">Password</label>
             </div>
           </div>
-          <div class="col-md-12 mb-2">
-            <div class="form-floating">
-              <select class="form-select" id="floatingSelectOption" aria-label="Floating label select example">
+          <div class="col-md-12">
+            <div class="form-floating d-grid">
+              <input class="btn-flat btn-sm" type="submit" value="Request Estimate">
                 <option selected>Select option</option>
                 <option value="1">Bathroom</option>
                 <option value="2">Kitchen</option>
