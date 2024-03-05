@@ -664,7 +664,8 @@
   <!-- START THE MODAL SECTION FOR GET YOUR ESTIMATE -->
 
   <div class="mb-modal mb-hidden get-estimate" id="get-estimate-id">
-    <button class="btn--close-modal" id="get-estimate-close">&times;</button>
+    <!-- Use Bootstrap's data-bs-dismiss attribute to handle the modal closing -->
+    <button type="button" class="btn--close-modal" data-bs-dismiss="modal">&times;</button>
     <h2 class="mb-modal__header text-center">
       Request a FREE estimate today!
     </h2>
@@ -679,25 +680,26 @@
           </div>
           <div class="col-md mb-2">
             <div class="form-floating">
-              <input type="text" class="form-control" id="floatingInputLastname" name="lastname" placeholder="Last Name" value="">
+              <input type="text" class="form-control" id="floatingInputLastname" name="lastName" placeholder="Last Name" value="">
               <label for="floatingInputLastname">Last Name</label>
             </div>
           </div>
           <div class="col-md-12 mb-2">
             <div class="form-floating">
-              <input type="email" class="form-control" id="floatingEmail" name="email" placeholder="Password">
+              <input type="email" class="form-control" id="floatingEmail" name="email" placeholder="Email">
               <label for="floatingEmail">Email</label>
             </div>
           </div>
           <div class="col-md-12 mb-2">
             <div class="form-floating">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaMessage"></textarea>
+              <!-- Make sure to add the name attribute so the data gets sent to the server -->
+              <textarea class="form-control" name="comments" placeholder="Leave a comment here" id="floatingTextareaMessage"></textarea>
               <label for="floatingTextareaMessage">Additional comments</label>
             </div>
           </div>
           <div class="col-md-12">
             <div class="form-floating d-grid">
-              <input class="btn-flat btn-sm" type="Submit" value="Request Estimate">
+              <input class="btn-flat btn-sm" type="submit" value="Request Estimate">
             </div>
           </div>
         </div>
